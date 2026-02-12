@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build / temporary
+*.pdf
+extract_images.py
+telegram-cloud-photo-*
+
+# IDE
+.vscode/
+.idea/
+
+# Node (if server used locally)
+node_modules/
