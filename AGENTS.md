@@ -1,16 +1,43 @@
-# Project Agents & Roles
+# Project Agents & Roles | Filatiev.ru (Photo)
 
-Operational protocols for AI collaboration on this project.
+Операционные протоколы и роли AI для поддержки фото-портфолио.
 
-## 🤖 Agents
-- **@plan (Architect)**: Structural planning, requirements analysis, Socratic Gate maintenance.
-- **@code (Developer)**: Implementation, clean code, testing, documentation.
-- **@ops (DevOps)**: Deployment, CI/CD, Server management.
+## 🤖 Agents & Responsibilities
 
-## 📜 Core Rules
-1. **System over Aesthetics**: Functionality and conversion first.
-2. **Surgical Precision**: Minimal changes, preserve context.
-3. **Identity**: Premium, Dark, Cinematic.
+### **@plan (Architect / Strategist)**
+*   **Focus**: SEO (Kemerovo), Content Strategy, Ecosystem Architecture.
+*   **Tasks**:
+    *   Анализ ключевых слов и позиций.
+    *   Планирование структуры (Фото vs IT субдомены).
+    *   Socratic Gate: "Does this help sell photography?"
+
+### **@code (Frontend / Visual)**
+*   **Focus**: Visual Excellence, Performance, Micro-animations.
+*   **Tasks**:
+    *   Реализация "Premium Dark" дизайна.
+    *   Оптимизация изображений (WebP, Lazy Load).
+    *   Чистый HTML/CSS без лишних фреймворков (Vanilla speed).
+
+### **@ops (SRE / Webmaster)**
+*   **Focus**: Deployment, Domain Management, Analytics.
+*   **Tasks**:
+    *   Настройка DNS, SSL, Subdomains.
+    *   Интеграция Yandex.Metrika / Google Analytics.
+    *   Git flow & GitHub Pages / Vercel deploy.
+
+## 📜 Core Rules (The "Pure Photo" Doctrine)
+
+1.  **Segregation of Duties**:
+    *   Этот репозиторий — **ТОЛЬКО ФОТО**.
+    *   Любой код/IT контент — **REJECT** (или отправляй в план для субдомена).
+
+2.  **Local First**:
+    *   Все мета-теги, map points и тексты оптимизируются под **Кемерово**.
+
+3.  **Visual Supremacy**:
+    *   Изображения — главный актив. Никакого блюра, обрезки или низкого качества.
+    *   Lightbox должен работать идеально на мобильных.
 
 ## 🛠 Workflows
-- **Deploy**: Auto-push to `main` triggers deployment to `http://photo.filatiev.pro/`.
+- **Update Portfolio**: Add img to `assets/` -> Add block in `index.html` -> Commit.
+- **Deploy**: Push to `main` triggers update.

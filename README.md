@@ -1,18 +1,33 @@
-# Andrey Filatiev | Visual Storyteller
+# Andrey Filatiev | Фотограф Кемерово | Visual Storyteller
 
-Professional photography portfolio website.
-Deployed at: [http://photo.filatiev.pro/](http://photo.filatiev.pro/)
+**Профессиональное портфолио: Фуд-фотография, HoReCa, Интерьеры, Контент.**
+Deployed at: [https://photo.filatiev.pro/](https://photo.filatiev.pro/)
 
-## Tech Stack
-- **Core**: HTML5, CSS3, JavaScript (Vanilla)
-- **Design**: Magnetic Grid, Lightbox, Dark Premium Aesthetic
-- **Fonts**: Inter, Playfair Display, Space Grotesk
+## 🎯 Стратегия: "Pure Photography"
+Проект сфокусирован исключительно на визуальных услугах. 
+IT-услуги и разработка вынесены за скобки (будут на отдельном субдомене `dev.filatiev.pro` или `tech.filatiev.pro`).
 
-## Structure
-- `index.html`: Main structure (Grid Gallery, Lightbox, Footer)
-- `style.css`: All styles (Glassmorphism, Grid, Animations)
-- `script.js`: Lightbox logic, scroll reveals, interactions
-- `assets/`: Images and resources
+## 📍 Локация & SEO
+- **Region**: Кемерово (Kemerovo), Россия.
+- **Focus**: HoReCa (рестораны), предметная съемка, контент для соцсетей, деловой портрет.
+- **Tools**: Schema.org (LocalBusiness/Person), Open Graph, Yandex.Metrika.
 
-## Agents & Rules
+## 🛠 Tech Stack
+- **Core**: HTML5 (Semantic), CSS3 (Variables, Flex/Grid), Vanilla JS.
+- **Design**: Dark Premium Aesthetic, Glassmorphism, Responsive Grid.
+- **Performance**: Lazy loading, WebP optimization (planned).
+
+## 🚀 Roadmap
+- [x] SEO оптимизация под Кемерово (Meta, Title, Schema).
+- [x] Refactoring: Удаление IT-услуг с главной.
+- [ ] Перенос IT-проектов на субдомен.
+- [ ] Будущий переезд на домен `.com`.
+
+## 📂 Structure
+- `index.html`: Main landing page (Portfolio Grid, Services, Contacts).
+- `style.css`: Custom design system (Gold/Dark theme).
+- `script.js`: Lightbox gallery logic & interactions.
+- `assets/`: Optimized images.
+
+## 🤖 Agents & Rules
 See [AGENTS.md](./AGENTS.md) for operational protocols.
