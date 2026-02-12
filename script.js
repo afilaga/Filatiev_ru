@@ -40,6 +40,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 3.1 Pass UTM/click IDs to outbound contact links
+    const attributionKeys = [
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'utm_term',
+        'utm_content',
+        'utm_id',
+        'gclid',
+        'yclid',
+        'fbclid'
+    ];
+    const pageParams = new URLSearchParams(window.location.search);
+    const trackedParams = new URLSearchParams();
+    attributionKeys.forEach((key) => {
+        const value = pageParams.get(key);
+        if (value) trackedParams.set(key, value);
+    });
+
+    if ([...trackedParams.keys()].length > 0) {
+        document.querySelectorAll('a[data-pass-utm="true"]').forEach((link) => {
+            try {
+                const linkUrl = new URL(link.href, window.location.origin);
+                trackedParams.forEach((value, key) => {
+                    if (!linkUrl.searchParams.has(key)) {
+                        linkUrl.searchParams.set(key, value);
+                    }
+                });
+                link.href = linkUrl.toString();
+            } catch (error) {
+                // Ignore malformed href values to keep page behavior safe.
+            }
+        });
+    }
+
     // 4. MAGIC UI: Spotlight Effect for Service Cards
     document.querySelectorAll('.spotlight-card').forEach(card => {
         card.addEventListener('mousemove', (e) => {
