@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: photo.filatiev.pro
+Sitemap: https://photo.filatiev.pro/sitemap.xml

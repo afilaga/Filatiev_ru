@@ -13,3 +13,5 @@ telegram-cloud-photo-*
 
 # Node (if server used locally)
 node_modules/
+.next/
+out/
