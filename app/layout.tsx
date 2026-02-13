@@ -3,9 +3,9 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Андрей Филатьев | Фотограф Кемерово | HoReCa & Портфолио",
+  title: "Андрей Филатьев | Фотограф Сочи | HoReCa & Портфолио",
   description:
-    "Андрей Филатьев — профессиональный фотограф в Кемерово. Фуд-фотография, съемка ресторанов (HoReCa), брендинг и портреты.",
+    "Андрей Филатьев — профессиональный фотограф в Сочи. Фуд-фотография, съемка ресторанов (HoReCa), брендинг и портреты.",
   metadataBase: new URL("https://photo.filatiev.pro"),
   alternates: {
     canonical: "/",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Андрей Филатьев | Фотограф Кемерово",
+    title: "Андрей Филатьев | Фотограф Сочи",
     description:
-      "Профессиональная фуд-фотография и съемка для бизнеса в Кемерово.",
+      "Профессиональная фуд-фотография и съемка для бизнеса в Сочи.",
     url: "https://photo.filatiev.pro/",
     siteName: "Andrey Filatiev",
     locale: "ru_RU",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Андрей Филатьев | Фотограф Кемерово",
+    title: "Андрей Филатьев | Фотограф Сочи",
     description:
-      "Профессиональная фуд-фотография и съемка для бизнеса в Кемерово.",
+      "Профессиональная фуд-фотография и съемка для бизнеса в Сочи.",
     images: ["/assets/portfolio/portfolio_1.jpg"],
   },
 };
