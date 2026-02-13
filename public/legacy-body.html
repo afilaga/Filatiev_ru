@@ -1,0 +1,264 @@
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="#home" class="brand-mark" aria-label="На главную">
+                <span class="brand-dot"></span>
+                <span class="brand-text">Andrey Filatiev</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Главная навигация">
+                <a href="#home">Главная</a>
+                <a href="https://terminal.filatiev.pro/" target="_blank" rel="noopener noreferrer">AI-assist</a>
+                <a href="#contact">Контакты</a>
+                <a href="https://it.filatiev.pro/" target="_blank" rel="noopener noreferrer">IT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- HERO SECTION (MAGIC MCP STYLE) -->
+    <section class="magic-hero" id="home">
+        <!-- Magic Grid Background -->
+        <div class="magic-grid-bg"></div>
+
+        <!-- Meteor Shower Container -->
+        <div class="meteor-container" id="meteorContainer"
+            style="position: absolute; inset: 0; pointer-events: none; z-index: 1;"></div>
+
+        <div class="hero-content-wrapper animate-up delay-1">
+            <!-- Top Label -->
+
+
+            <!-- Main Title -->
+            <h1 class="hero-title-main">
+                <span class="outline-text">ANDREY</span>
+                ANDREY<br>
+                <span class="text-gold">FILATIEV</span>
+            </h1>
+
+            <!-- Roles Bar -->
+            <div class="hero-roles-bar animate-up delay-2">
+                <span>ФОТОГРАФ</span>
+                <span class="separator">•</span>
+                <span>МАРКЕТОЛОГ</span>
+            </div>
+
+            <!-- Description -->
+            <div class="hero-desc-box animate-up delay-3">
+                <p>
+                    ВИЗУАЛЬНЫЕ РЕШЕНИЯ ДЛЯ HORECA И БИЗНЕСА.<br>
+                    ФОТОГРАФИЯ И AI-ТЕХНОЛОГИИ.
+                </p>
+            </div>
+
+            <!-- CTA Group -->
+            <div style="margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;"
+                class="animate-up delay-4">
+                <a href="#contact" class="cta-btn magic-shimmer">
+                    <span class="shimmer-text">ОБСУДИТЬ ПРОЕКТ</span>
+                </a>
+
+                <a href="https://it.filatiev.pro/" target="_blank" rel="noopener noreferrer" class="cta-btn it-btn">
+                    <span>IT / DIGITAL</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator animate-fade delay-5" style="z-index: 20;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- GRID GALLERY SECTION -->
+    <section class="grid-gallery-section" id="portfolio">
+        <div class="gallery-header animate-up">
+            <h2 class="section-title">ВИЗУАЛЬНЫЕ <span class="text-gold">ИСТОРИИ</span></h2>
+            <p class="section-subtitle">Фуд-фотография и визуальный контент для бизнеса в Кемерово</p>
+        </div>
+
+        <div class="gallery-grid-container animate-up delay-2">
+            <div class="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="assets/portfolio/portfolio_1.jpg" alt="WRF: Огонёк" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>WRF: Огонёк</h3>
+                        <p>Food Production</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="assets/portfolio/portfolio_2.jpg" alt="IKRA" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>IKRA</h3>
+                        <p>Fine Dining</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="assets/portfolio/portfolio_3.jpg" alt="Red Fox" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Red Fox</h3>
+                        <p>Restaurant</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="assets/portfolio/portfolio_4.jpg" alt="Chicha" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Chicha</h3>
+                        <p>Pan-Asian</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="assets/portfolio/portfolio_5.jpg" alt="Luciano" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Luciano</h3>
+                        <p>Italian Cuisine</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="assets/portfolio/portfolio_6.jpg" alt="Plakuchaya Iva" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Плакучая Ива</h3>
+                        <p>Atmosphere</p>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="assets/portfolio/portfolio_7.jpg" alt="Fettuccine" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Fettuccine</h3>
+                        <p>Italian</p>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="assets/portfolio/portfolio_8.jpg" alt="Baran Rapan" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>Баран Рапан</h3>
+                        <p>Local Cuisine</p>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="assets/portfolio/portfolio_9.jpg" alt="1 2 2 9" loading="lazy">
+                    <div class="item-overlay">
+                        <h3>1 2 2 9</h3>
+                        <p>Winery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <a class="prev-lightbox" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next-lightbox" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Направления <span class="text-gold">Съемки</span></h2>
+                <p style="color: var(--text-muted);">Визуальные решения для вашего бизнеса</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- CARD 1: HoReCa -->
+                <div class="spotlight-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2H3z"></path>
+                            <path d="M7 2v20"></path>
+                            <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Рестораны & HoReCa</h3>
+                    <p class="service-desc">Фуд-фотография для меню, съемка интерьеров и контент для ресторанов.</p>
+                </div>
+
+                <!-- CARD 2: Content -->
+                <div class="spotlight-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Контент & SMM</h3>
+                    <p class="service-desc">Визуальное оформление соцсетей. Reels, предметная съемка, лайфстайл для
+                        брендов.</p>
+                </div>
+
+                <!-- CARD 3: Portraits -->
+                <div class="spotlight-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Портрет & Личный Бренд</h3>
+                    <p class="service-desc">Деловой портрет, имиджевая съемка для экспертов и руководителей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <footer class="footer-cta" id="contact">
+        <div class="cta-box">
+            <!-- Author Photo -->
+            <div class="footer-avatar-container">
+                <img src="assets/avatar.jpg" alt="Andrey Filatiev" class="footer-avatar">
+            </div>
+
+            <h2 style="font-size: 2rem; margin-bottom: 2rem;">Узнать больше и запросить<br>портфолио под ваш проект</h2>
+
+            <div class="contact-buttons">
+                <a href="https://t.me/filatievpro" class="cta-btn telegram-btn" data-pass-utm="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-right:8px;">
+                        <path d="M22 2L11 13" />
+                        <path d="M22 2l-7 20-4-9-9-4 20-7z" />
+                    </svg>
+                    Telegram
+                </a>
+                <a href="https://wa.me/79384009044" class="cta-btn whatsapp-btn" data-pass-utm="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-right:8px;">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+
+            <div class="social-links-footer">
+                <a href="https://instagram.com/filatiev.method" target="_blank" data-pass-utm="true"
+                    class="social-link">instagram.com/filatiev.method</a>
+            </div>
+
+            <div class="footer-copy">
+                <span>Andrey Filatiev © 2026</span>
+            </div>
+        </div>
+    </footer>
+
