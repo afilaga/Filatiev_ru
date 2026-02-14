@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function initPageInteractions() {
     // 1. Hero Entrance Animation
     const hero = document.querySelector('.magic-hero');
     if (hero) {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         setInterval(createMeteor, 200);
     }
-});
+}
 
 // =========================================
 // LIGHTBOX FUNCTIONALITY
@@ -115,8 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const galleryImages = [];
 let currentSlideIndex = 0;
 
-// Populate gallery images array on load
-document.addEventListener('DOMContentLoaded', () => {
+function initGalleryImages() {
+    if (galleryImages.length > 0) return;
+
     document.querySelectorAll('.gallery-item').forEach(item => {
         const img = item.querySelector('img');
         const overlay = item.querySelector('.item-overlay');
@@ -127,7 +128,18 @@ document.addEventListener('DOMContentLoaded', () => {
             caption: title + (subtitle ? ' — ' + subtitle : '')
         });
     });
-});
+}
+
+function runWhenDomReady(fn) {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', fn, { once: true });
+    } else {
+        fn();
+    }
+}
+
+runWhenDomReady(initPageInteractions);
+runWhenDomReady(initGalleryImages);
 
 function openLightbox(index) {
     currentSlideIndex = index;
